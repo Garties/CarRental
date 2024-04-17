@@ -1,0 +1,46 @@
+{% extends "base.html.jinja" %}
+{% block content %}
+{% load static %}
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="{% static 'images/octavia.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Skoda Octavia</h5>
+        <p class="card-text">90 zł/dzień</p>
+        <button type="button" class="btn btn-primary" style = "position:relative; left:500px;">Zamów</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+    <img src="{% static 'images/focus.jpg' %}" class="card-img-top" alt="ford-focus">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">80zł/dzień</p>
+      <button type="button" class="btn btn-primary" style = "position:relative; left:500px;">Zamów</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+    <img src="{% static 'images/tiguan.png' %}" class="card-img-top" alt="volkswagen-tiguan">
+    <div class="card-body">
+      <h5 class="card-title">Volkswagen Tiguan</h5>
+      <p class="card-text">110zł/dzień</p>
+      <button type="button" class="btn btn-primary" style = "position:relative; left:500px;">Zamów</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="{% static 'images/vitara.png' %}" class="card-img-top" alt="suzuki-vitara">
+      <div class="card-body">
+        <h5 class="card-title">Suzuki Vitara</h5>
+        <p class="card-text">100zł/dzień</p>
+        <button type="button" class="btn btn-primary" style = "position:relative; left:500px;">Zamów</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

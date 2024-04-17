@@ -1,1 +1,31 @@
 {% extends "base.html.jinja" %}
+{% block content %}
+{% load static %}
+<p class="fw-bold fs-1 badge bg-primary text-wrap" style = "position:relative;width: 100%" >Popularne Samochody</p>
+<div class="card-group">
+  <div class="card">
+    <img src="{% static 'images/octavia.png' %}" class="card-img-top" alt="skoda-octavia">
+    <div class="card-body">
+      <h5 class="card-title">Skoda Octavia</h5>
+      <p class="card-text">90 zł/dzień</p>
+      <button type="button" class="btn btn-primary" style = "position:relative; left:500px;" role="button" href="octavia">Zamów</button>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static 'images/focus.jpg' %}" class="card-img-top" alt="ford-focus">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">80zł/dzień</p>
+      <button type="button" class="btn btn-primary" style = "position:relative; left:500px;">Zamów</button>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static 'images/tiguan.png' %}" class="card-img-top" alt="volkswagen-tiguan">
+    <div class="card-body">
+      <h5 class="card-title">Volkswagen Tiguan</h5>
+      <p class="card-text">110zł/dzień</p>
+      <button type="button" class="btn btn-primary" style = "position:relative; left:500px;">Zamów</button>
+    </div>
+  </div>
+</div>
+{% endblock content %}

@@ -42,7 +42,7 @@ class Car(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2)
     value = models.DecimalField(max_digits=10, decimal_places=2)
     category = models.CharField(max_length=20, choices=CATEGORIES)
-    
+
 class Address(models.Model):
     user = models.OneToOneField(User, on_delete=models.RESTRICT)
     country = models.CharField(max_length=30)
